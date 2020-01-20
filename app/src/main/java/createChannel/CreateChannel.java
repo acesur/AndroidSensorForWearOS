@@ -22,7 +22,7 @@ public class CreateChannel {
             NotificationChannel channel1 =  new NotificationChannel(CHANNEL_1, "Channel 1", NotificationManager.IMPORTANCE_HIGH);
             channel1.setDescription("This is channel 1");
             NotificationChannel channel2 = new NotificationChannel(CHANNEL_2, "channel 2",NotificationManager.IMPORTANCE_LOW);
-            channel2.setDescription("this is channel 2");
+            channel2.setDescription("This is channel 2");
 
 
             NotificationManager manager = context.getSystemService(NotificationManager.class);
