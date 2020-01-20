@@ -66,8 +66,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void DisplayNotification(){
-        Notification notification = new NotificationCompat().Builder(this, CreateChannel.CHANNEL_1).setSmallIcon(R.drawable.ic_mms_black_24dp).setContentTitle("FirstMessage").setContentText("First Message Body").setCategory(NotificationCompat.CATEGORY_MESSAGE).build();
+        Notification notification = new NotificationCompat.Builder(this, CreateChannel.CHANNEL_1).setSmallIcon(R.drawable.ic_mms_black_24dp).setContentTitle("FirstMessage").setContentText("First Message Body").setCategory(NotificationCompat.CATEGORY_MESSAGE).build();
 
         notificationManagerCompat.notify(1, notification);
+    }
+    private void DisplayNotification2(){
+        Notification notification = new NotificationCompat.Builder(this, CreateChannel.CHANNEL_2).setSmallIcon(R.drawable.ic_voice_chat_black_24dp).setContentTitle("Second Message").setContentText("Second Message Body").setCategory(NotificationCompat.CATEGORY_MESSAGE).build();
+
+        notificationManagerCompat.notify(2,notification);
     }
 }

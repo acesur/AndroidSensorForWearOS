@@ -18,7 +18,7 @@ public class CreateChannel {
         this.context = context;
     }
     public void createChannel(){
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.0){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             NotificationChannel channel1 =  new NotificationChannel(CHANNEL_1, "Channel 1", NotificationManager.IMPORTANCE_HIGH);
             channel1.setDescription("This is channel 1");
             NotificationChannel channel2 = new NotificationChannel(CHANNEL_2, "channel 2",NotificationManager.IMPORTANCE_LOW);
