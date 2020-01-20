@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidSensor</string>
+    <string name="display_notification">Display Notification</string>
+    <string name="display_another_notification">Display another Notification</string>
 </resources>
