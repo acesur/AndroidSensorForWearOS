@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
     private Button btnDisplayNotification;
     private Button btnDisplayNotification2;
 
+    private Button btnStartService;
+    private Button btnStopService;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
             sensors += sensorList.get(i).getName() + "\n";
             tvSensors.append(sensors);
         }
+        btnStartService = findViewById(R.id.btnStartService);
+        btnStopService = findViewById(R.id.btnStopService);
     }
     private void DisplayNotification(){
         Notification notification = new NotificationCompat.Builder(this, CreateChannel.CHANNEL_1).setSmallIcon(R.drawable.ic_mms_black_24dp).setContentTitle("FirstMessage").setContentText("First Message Body").setCategory(NotificationCompat.CATEGORY_MESSAGE).build();
